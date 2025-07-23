@@ -127,9 +127,9 @@ I can assist with legal case files related to:\n
 - 🌐 Data/IT/Privacy
 - 📑 Regulatory/Compliance
 - 🏛️ Litigation & Dispute Resolution
-- 🟤 Civil & Criminal Law
+- 🟤 Civil & Criminal Law.\n
 
-Additionally, I can answer general legal queries across all jurisdictions."""
+Additionally, I can answer general legal queries across all jurisdictions.\n"""
 
         elif any(phrase in lower_query for phrase in [
             "what you can do", "what can you do", "how can you help", "your use",
@@ -151,7 +151,7 @@ I can assist with legal case files related to:
 - 🌐 Data/IT/Privacy
 - 📑 Regulatory/Compliance
 - 🏛️ Litigation & Dispute Resolution
-- 🟤 Civil & Criminal Law
+- 🟤 Civil & Criminal Law. 
 
 Additionally, I can answer general legal queries across all jurisdictions."""
 
