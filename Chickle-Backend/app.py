@@ -13,27 +13,12 @@ genai.configure(api_key="AIzaSyADz1NKCwyDqniOj2N6A-VhJNQjCYTR4C0")
 model = genai.GenerativeModel("gemini-2.5-pro")
 
 def clean_markdown(text):
-    """
-    Simple markdown cleaning that fixes structure without causing weird line gaps.
-    """
-    # Remove any HTML tags
     text = re.sub(r'<[^>]+>', '', text)
-
-    # Fix excessive whitespace
-    text = re.sub(r'[ \t]+', ' ', text)  # Multiple spaces/tabs to single space
-    text = re.sub(r'\n{3,}', '\n\n', text)  # Max 2 consecutive newlines
-
-    # Remove leading/trailing whitespace from each line
+    text = re.sub(r'\*{3,}([^*]+)\*{3,}', r'**\1**', text)  # handle ***bold*** misuse
+    text = re.sub(r'[ \t]+', ' ', text)
     lines = [line.strip() for line in text.split('\n')]
-    text = '\n'.join(lines)
-
-    # Fix markdown formatting issues
-    text = re.sub(r'\*{3,}([^*]+)\*{3,}', r'**\1**', text)  # Fix excessive asterisks
-
-    # Clean up the final result
-    text = text.strip()
-
-    return text
+    cleaned = '\n'.join(line for line in lines if line)
+    return cleaned.strip()
 
 def query_gemini_for_legal(query, is_file=False):
     """Generate a legal answer using Gemini."""
