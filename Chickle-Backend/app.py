@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Gemini API setup
-genai.configure(api_key="AIzaSyDRt69Gh0RrPFfSVgiQ4yOy-MwIYuKhfnI")
+genai.configure(api_key="AIzaSyADz1NKCwyDqniOj2N6A-VhJNQjCYTR4C0")
 model = genai.GenerativeModel("gemini-2.5-pro")
 
 def clean_markdown(text):
@@ -50,6 +50,9 @@ Important guidelines:
 - Use **bold** for important legal terms
 - Keep paragraphs concise and well-separated
 - Avoid excessive line breaks or formatting
+-If the user greets (e.g., "hi", "hello", "good morning", "hey"), greet them back politely and respond with:
+"Hello! I’m Chickle, How can I assist you today with your legal concerns?"
+-For all legal queries, DO NOT repeat the greeting. Go straight to answering the user's legal question professionally.
 
 Only answer legal questions. If not legal-related, respond:
 "⚠️ This is not a legal question. I can only answer legal queries."
