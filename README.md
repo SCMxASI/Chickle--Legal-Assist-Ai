@@ -26,7 +26,7 @@ They use **Google Gemini 2.5 Pro** for text understanding, analysis, and generat
 - Flask backend integration.
 
 ---
-###[Another Project]
+### [Another Project]()
 ### 2. [Chickle Contract Analyzer & Creator](https://chicklelegalcontractanalyzer.netlify.app/)
 > A web app to **analyze**, **summarize**, or **generate** legal contracts automatically.
 
@@ -66,5 +66,6 @@ They use **Google Gemini 2.5 Pro** for text understanding, analysis, and generat
 ---
 
 > “Automating legal intelligence — one contract at a time.”
+
 
 
