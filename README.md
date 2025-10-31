@@ -26,7 +26,7 @@ It intelligently analyzes, summarizes, and interprets **legal contracts or uploa
 ├── app.py # Flask backend
 ├── requirements.txt # Python dependencies
 ├── README.md # Documentation
-└── static/ / templates/ # (Optional frontend)
+└── static/ / templates/ 
 
 yaml
 Copy code
@@ -182,3 +182,4 @@ Mohamed Asif (Asi)
 B.Sc Artificial Intelligence & Machine Learning
 Final Year Project — AI Legal Contract Analyzer and Creator
 📁 Portfolio: https://mdasif-portfolio.netlify.app
+
