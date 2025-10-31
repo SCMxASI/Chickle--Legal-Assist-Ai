@@ -1,4 +1,4 @@
-# Chickle Legal AI Tools
+# Chickle Legal AI Tools 
 
 **Developed by Mohamed Asif**  
 B.Sc AI & ML, Adithya College of Arts and Science, Coimbatore
@@ -66,6 +66,7 @@ They use **Google Gemini 2.5 Pro** for text understanding, analysis, and generat
 ---
 
 > “Automating legal intelligence — one contract at a time.”
+
 
 
 
